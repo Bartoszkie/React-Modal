@@ -7,16 +7,32 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    @media screen and (max-width: 456px) {
+        flex-direction: column;
+    }
 
     &__title {
-        font-size: 2rem;
+        font-size: 2.5rem;
         font-weight: 100;
         color: #000;
     }
 
     &__btn {
+        @media screen and (max-width: 456px) {
+            margin-top: 1rem;
+        }
+
+        letter-spacing: .15rem;
+        font-size: 1.6rem;
         border: none;
-        padding: .5rem 1rem;
+        padding: .7rem 1.2rem;
         cursor: pointer;
+        transition: .2s ease-in-out all;
+
+        &:hover {
+            background-color: #000;
+            color: #fff;
+        }
     }
 }

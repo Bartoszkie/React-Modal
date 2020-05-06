@@ -9,17 +9,44 @@
     padding: 20px 0;
     background-color: #fff;
 
+    @media screen and (max-width: 456px) {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
     &__btn {
+        @media screen and (max-width: 456px) {
+            display: inline-block;
+        }
+
+        font-size: 1.6rem;
+        letter-spacing: .15rem;
         border: none;
-        padding: .5rem 1rem;
+        padding: .7rem 1.2rem;
         cursor: pointer;
+
+        transition: .2s ease-in-out all;
+
+        &:hover {
+            background-color: #000;
+            color: #fff;
+        }
 
         &:first-child {
             margin-right: 1rem;
+
+            @media screen and (max-width: 456px) {
+                margin: 0rem;
+            }
         }
 
         &:last-child {
             margin-right: 2rem;
+
+            @media screen and (max-width: 456px) {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
         }
     }
 }

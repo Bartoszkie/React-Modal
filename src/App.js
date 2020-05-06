@@ -15,6 +15,8 @@ class App extends React.Component {
           </Modal.Content>
           <Modal.Footer callToActionLabel={"Udało Się!"} />
         </Modal>
+
+        <h1>Test task for JS Gladiators!</h1>
       </div>
     );
   }
