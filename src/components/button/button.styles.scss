@@ -1,0 +1,13 @@
+.button-component {
+    letter-spacing: .15rem;
+    font-size: 1.6rem;
+    border: none;
+    padding: .7rem 1.2rem;
+    cursor: pointer;
+    transition: .2s ease-in-out all;
+
+    &:hover {
+        background-color: #000;
+        color: #fff;
+    }
+}

@@ -1,6 +1,8 @@
 import React from "react";
 import "./modal-footer.scss";
 
+import Button from "../button/button.component";
+
 const ModalFooter = ({ toggle, callToActionLabel }) => {
   const toggleWithAlert = () => {
     alert("OK");
@@ -9,12 +11,8 @@ const ModalFooter = ({ toggle, callToActionLabel }) => {
 
   return (
     <footer className="modal-footer">
-      <button className="modal-footer__btn" onClick={toggle}>
-        Change Modal
-      </button>
-      <button className="modal-footer__btn" onClick={toggleWithAlert}>
-        {callToActionLabel}
-      </button>
+      <Button buttonMethod={toggle}>Modal Change</Button>
+      <Button buttonMethod={toggleWithAlert}>{callToActionLabel}</Button>
     </footer>
   );
 };

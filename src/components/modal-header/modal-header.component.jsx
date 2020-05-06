@@ -1,13 +1,13 @@
 import React from "react";
 import "./modal-header.styles.scss";
 
-const ModalHeader = ({ title, toggle, children }, props) => {
+import Button from "../button/button.component";
+
+const ModalHeader = ({ title, toggle }) => {
   return (
     <div className="modal-header">
       <h2 className="modal-header__title">{title}</h2>
-      <button className="modal-header__btn" onClick={toggle}>
-        Modal Change
-      </button>
+      <Button buttonMethod={toggle}>Modal Change</Button>
     </div>
   );
 };
