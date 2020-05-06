@@ -1,0 +1,25 @@
+.modal-footer {
+    width: 100%;
+    align-self: flex-end;
+
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+
+    padding: 20px 0;
+    background-color: #fff;
+
+    &__btn {
+        border: none;
+        padding: .5rem 1rem;
+        cursor: pointer;
+
+        &:first-child {
+            margin-right: 1rem;
+        }
+
+        &:last-child {
+            margin-right: 2rem;
+        }
+    }
+}
