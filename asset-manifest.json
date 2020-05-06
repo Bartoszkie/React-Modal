@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/React-Modal/static/css/main.645cc306.chunk.css",
+    "main.js": "/React-Modal/static/js/main.ae7c4b8b.chunk.js",
+    "main.js.map": "/React-Modal/static/js/main.ae7c4b8b.chunk.js.map",
+    "runtime-main.js": "/React-Modal/static/js/runtime-main.a1a4c999.js",
+    "runtime-main.js.map": "/React-Modal/static/js/runtime-main.a1a4c999.js.map",
+    "static/js/2.5b40c9ec.chunk.js": "/React-Modal/static/js/2.5b40c9ec.chunk.js",
+    "static/js/2.5b40c9ec.chunk.js.map": "/React-Modal/static/js/2.5b40c9ec.chunk.js.map",
+    "index.html": "/React-Modal/index.html",
+    "precache-manifest.dadf534e47a644c5594a744bf6672c6a.js": "/React-Modal/precache-manifest.dadf534e47a644c5594a744bf6672c6a.js",
+    "service-worker.js": "/React-Modal/service-worker.js",
+    "static/css/main.645cc306.chunk.css.map": "/React-Modal/static/css/main.645cc306.chunk.css.map",
+    "static/js/2.5b40c9ec.chunk.js.LICENSE.txt": "/React-Modal/static/js/2.5b40c9ec.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a1a4c999.js",
+    "static/js/2.5b40c9ec.chunk.js",
+    "static/css/main.645cc306.chunk.css",
+    "static/js/main.ae7c4b8b.chunk.js"
+  ]
+}
