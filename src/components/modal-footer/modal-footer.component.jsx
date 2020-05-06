@@ -11,7 +11,7 @@ const ModalFooter = ({ toggle, callToActionLabel }) => {
 
   return (
     <footer className="modal-footer">
-      <Button buttonMethod={toggle}>Modal Change</Button>
+      <Button buttonMethod={toggle}>Cancel</Button>
       <Button buttonMethod={toggleWithAlert}>{callToActionLabel}</Button>
     </footer>
   );
