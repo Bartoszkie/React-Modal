@@ -44,7 +44,7 @@ export default class Modal extends React.Component {
         </React.Fragment>
       );
     } else {
-      null;
+      return null;
     }
   }
 }
