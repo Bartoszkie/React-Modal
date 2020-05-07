@@ -30,9 +30,9 @@ export default class Modal extends React.Component {
       React.cloneElement(child, { isOpen, toggle: this.toggle })
     );
 
-    return (
-      <>
-        {isOpen ? (
+    if (isOpen) {
+      return (
+        <React.Fragment>
           <div className="modal-container" onClick={this.toggle}>
             <div
               className="modal-container__items"
@@ -41,8 +41,10 @@ export default class Modal extends React.Component {
               {children}
             </div>
           </div>
-        ) : null}
-      </>
-    );
+        </React.Fragment>
+      );
+    } else {
+      null;
+    }
   }
 }

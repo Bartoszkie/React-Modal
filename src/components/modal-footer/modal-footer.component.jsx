@@ -13,8 +13,8 @@ const ModalFooter = ({ toggle, callToActionLabel }) => {
 
   return (
     <footer className="modal-footer">
-      <Button buttonMethod={toggle}>Cancel</Button>
-      <Button buttonMethod={toggleWithAlert}>{callToActionLabel}</Button>
+      <Button onClick={toggle}>Cancel</Button>
+      <Button onClick={toggleWithAlert}>{callToActionLabel || "Default Text"}</Button>
     </footer>
   );
 };

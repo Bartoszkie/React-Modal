@@ -8,8 +8,8 @@ import Button from "../button/button.component";
 const ModalHeader = ({ title, toggle }) => {
   return (
     <div className="modal-header">
-      <h2 className="modal-header__title">{title}</h2>
-      <Button buttonMethod={toggle}>Modal Change</Button>
+      <h2 className="modal-header__title">{title || "Basic Title"}</h2>
+      <Button onClick={toggle}>Modal Change</Button>
     </div>
   );
 };

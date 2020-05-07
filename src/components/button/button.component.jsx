@@ -1,8 +1,8 @@
 import React from "react";
 import "./button.styles.scss";
 
-const Button = ({ buttonMethod, children }) => {
-  return <button className="button-component" onClick={buttonMethod}>{children}</button>;
+const Button = ({ onClick, children }) => {
+  return <button className="button-component" onClick={onClick}>{children}</button>;
 };
 
 export default Button;
