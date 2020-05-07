@@ -31,16 +31,18 @@ export default class Modal extends React.Component {
     );
 
     return (
-      <div
-        className={`${
-          this.state.isOpen ? "modal-container-open" : "modal-container-closed"
-        }`}
-        onClick={this.toggle}
-      >
-        <div className="modal-container__items" onClick={this.stopPropagation}>
-          {children}
-        </div>
-      </div>
+      <>
+        {isOpen ? (
+          <div className="modal-container" onClick={this.toggle}>
+            <div
+              className="modal-container__items"
+              onClick={this.stopPropagation}
+            >
+              {children}
+            </div>
+          </div>
+        ) : null}
+      </>
     );
   }
 }

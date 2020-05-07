@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from "prop-types";
+
 import "./modal-header.styles.scss";
 
 import Button from "../button/button.component";
@@ -13,3 +15,8 @@ const ModalHeader = ({ title, toggle }) => {
 };
 
 export default ModalHeader;
+
+ModalHeader.propTypes = {
+  title: PropTypes.string,
+  toggle: PropTypes.func,
+};
